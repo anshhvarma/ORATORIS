@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from '@/assests/Oratorieslogo.png'
 
 
 const handleSlider = () => {
@@ -24,11 +25,11 @@ const NavigationMenuDemo = () => {
         className="ml-24"
         onClick={handleSlider}
         passHref>
-        {/* <Image src={Logo} className="h-9 w-9" alt="logo" /> */}
+        {/* <Image src={Logo} className="h-13 w-15 " alt="logo" /> */}
         <span className="text-xl inline-block font-bold">ORATORIS</span>
       </Link>
         <NavigationMenu.Root className="relative z-10 flex w-screen justify-center" >
-            <NavigationMenu.List className="center m-0 flex list-none rounded-md bg-white p-1">
+            <NavigationMenu.List className="center m-0 flex list-none rounded-md bg-white p-1 hidden lg:flex">
                 <NavigationMenu.Item>
 
                         <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 text-[15px] font-medium leading-none">
@@ -148,7 +149,7 @@ const NavigationMenuDemo = () => {
                 <NavigationMenu.Viewport className="relative mt-2.5 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-md bg-white transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn sm:w-[var(--radix-navigation-menu-viewport-width)]" />
             </div>
         </NavigationMenu.Root>
-        <div className="mr-24 text-xl"> 
+        <div className="mr-24 text-xl hidden lg:flex"> 
             Search 
         </div>
         </section>
