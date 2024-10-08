@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '@/assests/Oratorieslogo.png'
+// import Logo from '@/assests/Oratorieslogo.png'
 
 
 const handleSlider = () => {
