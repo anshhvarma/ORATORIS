@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section>
         <navbar />
-     <div className="flex flex-col items-center gap-4">
+     <div className="flex flex-col items-center min-h-screen gap-4">
         <div className="grid scroll-m-20 mt-64 text-4xl font-extrabold tracking-tight lg:text-6xl text-center">
           Oratoris
           <br /> We Bring Your skills to Life!
