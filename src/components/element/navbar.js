@@ -14,7 +14,7 @@ const handleSlider = () => {
     }
   };
 
-const NavigationMenuDemo = () => {
+const Navigation = () => {
     
     return (
 
@@ -180,4 +180,4 @@ const ListItem = React.forwardRef(
 
 ListItem.displayName = "ListItem";
 
-export default NavigationMenuDemo;
+export default Navigation;
