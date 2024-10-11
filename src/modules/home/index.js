@@ -1,5 +1,5 @@
 import React from 'react'
-// import Events from './events'
+import Grid from './upcomingEve'
 
 const Home = () => {
   return (
@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        {/* <Events /> */}
+        <Grid />
     </section>
 </div>
 
