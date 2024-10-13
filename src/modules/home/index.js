@@ -1,12 +1,85 @@
-import React from 'react'
-// import Grid from './upcomingEve'
-import CardHoverEffect from './hoverCards'
-import SpeakersCard from '@/components/element/speakers'
+import React from 'react';
+import CardHoverEffect from './hoverCards';
+import Image from 'next/image'; // Import Image from next/image
 
 const Home = () => {
   return (
     <section>
-        <div class="bg-white">
+      <div className="bg-white"> {/* Fixed className spelling */}
+        <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24"> {/* Fixed className spelling */}
+          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+              <div>
+                <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+                  Connect & learn from the experts
+                </h1>
+                <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+                  Grow your career fast with the right mentor.
+                </p>
+
+                <a
+                  href="#"
+                  title=""
+                  className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                  role="button"
+                >
+                  Join for free
+                  <svg
+                    className="w-6 h-6 ml-8 -mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
+                      d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+
+                <p className="mt-5 text-gray-600">
+                  Already joined us?{' '}
+                  <a href="#" title="" className="text-black transition-all duration-200 hover:underline">
+                    Log in
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <img
+                  className="w-full"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-1 items-center justify-center pt-24">
+          <Image 
+            src="/DemoImg.png" // Update this path to your image's path in the public folder
+            alt="Demo Image" // Add an alt attribute for accessibility
+            className="" // Add any class names as needed
+            width={1000} // Specify width
+            height={800} // Specify height
+          />
+          </div>
+
+          <CardHoverEffect />
+          {/* <Grid /> */}
+        </section>
+      </div>
+    </section>
+  );
+};
+
+export default Home;
+
+
+
+
     {/* <header class="bg-[#FCF8F1] bg-opacity-30">
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
@@ -40,38 +113,4 @@ const Home = () => {
             </div>
         </div>
     </header> */}
-
-    <section class="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                <div>
-                    {/* <p class="text-base font-semibold tracking-wider text-blue-600 uppercase"></p> */}
-                    <h1 class="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">Connect & learn from the experts</h1>
-                    <p class="mt-4 text-base text-black lg:mt-8 sm:text-xl">Grow your career fast with right mentor.</p>
-
-                    <a href="#" title="" class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400" role="button">
-                        Join for free
-                        <svg class="w-6 h-6 ml-8 -mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </a>
-
-                    <p class="mt-5 text-gray-600">Already joined us? <a href="#" title="" class="text-black transition-all duration-200 hover:underline">Log in</a></p>
-                </div>
-
-                <div>
-                    <img class="w-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png" alt="" />
-                </div>
-            </div>
-        </div>
-        <SpeakersCard />
-        <CardHoverEffect />
-        {/* <Grid /> */}
-    </section>
-</div>
-
-   </section>
-  )
-}
-
-export default Home
+                 
