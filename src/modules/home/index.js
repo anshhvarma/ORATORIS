@@ -1,10 +1,11 @@
 import React from 'react'
-import Grid from './upcomingEve'
+// import Grid from './upcomingEve'
+import CardHoverEffect from './hoverCards'
+import SpeakersCard from '@/components/element/speakers'
 
 const Home = () => {
   return (
     <section>
-        <navbar />
         <div class="bg-white">
     {/* <header class="bg-[#FCF8F1] bg-opacity-30">
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
@@ -63,7 +64,9 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <Grid />
+        <SpeakersCard />
+        <CardHoverEffect />
+        {/* <Grid /> */}
     </section>
 </div>
 
